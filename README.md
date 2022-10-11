@@ -32,3 +32,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Article
+
+On Git-hub
+create repository on Git-Hub with default settings and give a meaningfull name
+ON CMD
+cd to folder then
+npx create-next-app@latest
+give same name that you gave on github then wait until its being intalled. Then
+cd your_file_name
+code .
+
+On VSCode
+Go to terminal > new Terminal at the menu. After new teminal opened set the git remote by
+git remote add origin https://github.com/[GITHUB_USERNAME]/[YOUR_REPOSITORY_NAME].git
+git branch -M main
+git push -u origin main
+create .github|workflows\node.js.yml and set it up
+create pages/.nojekyll empy file.
+next.config.js add lines.
+package.json add scritps > "export": "next export",
+Commit all changes
+On Git-Hub
+create branch on Git-Hub with name gh-pages
+Go to settings > pages then set the Branch gh-pages
+Link for your dapp will shown top of page
+
+if any trouble with installing on Git-Hub side delete package-lock.json and node_modules then npm install again. that will create node_modules and proper package-lock.json
